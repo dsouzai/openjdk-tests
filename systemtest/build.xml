@@ -96,7 +96,9 @@
 			<arg value="--depth" />
 			<arg value="1" />
 			<arg value="--single-branch" />
-			<arg value="${git-prefix}://github.com/eclipse/openj9-systemtest.git" />
+			<arg value="-b" />
+			<arg value="sccTestUpdate" />
+			<arg value="${git-prefix}://github.com/dsouzai/openj9-systemtest.git" />
 		</exec>
 		<if>
 			<isset property="isZOS" />
